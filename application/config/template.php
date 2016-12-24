@@ -60,7 +60,7 @@ $template['default']['template'] = 'layout/credential.php';
 $template['default']['regions'] = array(
    'title'=>array('content' =>array('OAuth 2.0 Providers')),
    'menu',
-   'band_name'=>array('content' =>array('OAuth2')),
+   'band_name',
    'search',
    'content',
    'page_header',
