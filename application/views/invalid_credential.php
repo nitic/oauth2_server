@@ -13,7 +13,7 @@
      	</blockquote>
     </div>
     <button type="button" name="back"" class="btn btn-lg btn-danger btn-block" onClick="javascript:window.history.back(-1);"><i class="fa fa-backward fa-fw"></i>Back</button>
-	<div><a class="forgot" style="padding:4px;" href="#" target="_blank" class="">Forgotten account?</a></div>
+	<div><a class="forgot" style="padding:4px;" href="#" class="">Forgotten account?</a></div>
 		  </div>
         </form>
       </section>  

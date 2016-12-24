@@ -16,7 +16,7 @@ $action = base_url("authorize?response_type=".$response_type."&client_id=".$clie
           <input type="password" name="password" class="form-control input-lg" id="password" placeholder="Password" autocomplete="off" required/>
           </div>         
           <button type="submit" name="go" class="btn btn-lg btn-danger btn-block" value="user_credentials"><i class="fa fa-sign-in fa-fw"></i>Sign In</button>
-          <div><a class="forgot" style="padding:4px;" href="#" target="_blank" class="">Forgotten account?</a></div>
+          <div><a class="forgot" style="padding:4px;" href="#" class="">Forgotten account?</a></div>
         </form>
       </section>  
       </div>
