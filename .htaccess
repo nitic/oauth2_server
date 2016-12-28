@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /
+    RewriteBase /oauth2_server/
 	RewriteCond %{SERVER_PORT} !443
 	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L]
 	
