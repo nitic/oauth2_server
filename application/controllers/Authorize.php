@@ -27,7 +27,6 @@ class Authorize extends CI_Controller {
         $this->load->library("Server", "server");
         $this->load->model('oauth2_model','oauth2');
         $this->load->model('rbac_model','rbac');
-        $this->load->model('ldap_model','ldap');
 		//set app info
 		$app_info=json_decode($this->rbac->get_app_info_by_client_id($this->input->get("client_id")));
 		$data['app_info']=$app_info;
@@ -77,7 +76,7 @@ class Authorize extends CI_Controller {
 				 
 			// User Authentication and authorization
 							 
-				 if($this->ldap->Authentication($this->encryption->decrypt($this->session->flashdata('encrypt_username')),$this->encryption->decrypt($this->session->flashdata('encrypt_password'))))
+				 if($this->rbac->Authentication($this->encryption->decrypt($this->session->flashdata('encrypt_username')),$this->encryption->decrypt($this->session->flashdata('encrypt_password'))))
 						{
 							// Check User Authorized then bypass authorization
 							if($this->oauth2->isUserAuthorized($this->client_id,$this->encryption->decrypt($this->session->flashdata('encrypt_username'))))
